@@ -1,0 +1,44 @@
+/* Imports fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* Variables */
+:root {
+
+    /* Font colors  */
+    --fc-green: hsl(75, 94%, 57%);
+    --fc-white: hsl(0, 0%, 100%);
+    --fc-grey-700: hsl(0, 0%, 20%);
+    --fc-grey-800: hsl(0, 0%, 12%);
+    --fc-grey-900: hsl(0, 0%, 8%);
+
+    /* Font size */
+    --fs-14px: 14px;
+
+    /* Font Weight */
+    --weight-400: 400;
+    --weight-600: 600;
+    --weight-700: 700;
+}
+
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: var(--weight-400);
+    font-style: normal;
+    background-color: var(--fc-grey-900);
+    min-height: 100vh;
+    color: var(--fc-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
