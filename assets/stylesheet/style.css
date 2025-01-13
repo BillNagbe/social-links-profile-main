@@ -23,7 +23,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 325px) and (max-width: 375px) {
     
     body {
         font-family: "Inter", serif;
@@ -42,14 +42,14 @@
     
     .main-container {
         background-color: var(--fc-grey-800);
-        width: 90%;
-        height: 80vh;
+        max-width: 325px;
+        max-height: 575px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 0.5rem;
     }
     
     .header-container {
@@ -71,7 +71,7 @@
     }
     
     .header-container figure img {
-            width: 5rem;
+            width: 3rem;
             height: auto;
             border-radius: 50%;
     }   
@@ -100,7 +100,8 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding: 1rem;
+        padding: 0.5rem;
+        outline: 1px solid;
     }
     
     .skills-items {
@@ -112,6 +113,7 @@
        align-items: center;
        background-color: var(--fc-grey-700);
        border-radius: 5px;
+       gap: 0.625rem;
        
     }
     
@@ -138,13 +140,12 @@ body {
 
      .main-container {
         background-color: var(--fc-grey-800);
-        min-width: 325px;
-        width: 45vw;
-        height: 50vh;
+        max-width: 385px;
+        max-height: 615px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         padding: 1rem;
     }
@@ -157,11 +158,10 @@ body {
         text-align: center;
         width: 100%;
         height: 40%;
-        outline: 1px solid;
     }
 
     .header-container figure img {
-        width: 8rem;
+        width: 6rem;
         height: auto;
         border-radius: 50%;
     }
@@ -178,7 +178,7 @@ body {
     }
 
     aside p {
-        font-size: 1.5rem;
+        font-size: var(--fs-14px);
     }
 
     .skills-container {
@@ -187,9 +187,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 1rem;
-        gap: 1rem;
+        gap: 1.1rem;
     }
 
     .skills-items {
@@ -200,7 +200,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: calc(var(--fs-14px) * 1.5);
+        font-size: calc(var(--fs-14px) * 1.3);
         font-weight: var(--weight-600);
     }
 
